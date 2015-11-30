@@ -45,3 +45,32 @@ E.g.
 ```
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
 ```
+
+### Custom status bar background color on UIViewController. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+StatusBar.swift</a>
+
+E.g.
+
+*Option 1*:
+
+Method Swizzling - Use customViewDidLoad instead of built in viewDidLoad
+```
+    // MARK: ViewController lifecycle
+    
+    override func customViewDidLoad() {
+        
+        super.customViewDidLoad()
+    }
+```
+
+*Option 2*:
+
+Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(animated: Bool) for example
+
+```
+    // MARK: ViewController lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        statusBarBackgroundColor(0x0b6e99)
+    }
+```
