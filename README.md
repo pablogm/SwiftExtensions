@@ -37,3 +37,11 @@ NSThread.performBlockOnMainThread({ () -> Void in
             
 })
 ```
+
+### Get date by adding / subtracting days from now. <a target="_blank" href="https://gist.github.com/pablogm/b18618fa1e33b441fa98">NSDate+Utils.swift</a>
+
+E.g.
+
+```
+let tenDaysAgo = NSDate.dateBySubstractingDays(10)
+```
