@@ -3,8 +3,9 @@
 ------
 
 ### String utils <a target="_blank" href="https://gist.github.com/pablogm/4ad14e100416d6a804aa">String+Utils.swift</a>
+============
 
-E.g. *Localized string*
+###### Localized string
 
 ```swift
 "connect".localized
@@ -12,13 +13,13 @@ E.g. *Localized string*
 
 The "connect" string should be in your *Localizable.strings* files
 
-E.g. *Display an html string (i.e. html string to attributed string)*
+###### Display an html string (i.e. html string to attributed string)
 
 ```swift
 let attStringLeft = "<b><font face=\"HelveticaNeue\" size=\"6\" color=\"white\">\(speed)</font></b></br><font face=\"HelveticaNeue\" size=\"2\" color=\"white\">SPEED</font>".html2AttStr
 ```
 
-E.g. *Check if an email is valid*
+###### Check if an email is valid
 
 ```swift
  guard emailTextField.text!.isValidEmail() else {
@@ -26,7 +27,7 @@ E.g. *Check if an email is valid*
  }
 ```
 
-E.g. *Clean string*
+###### Clean string
 
 ```swift
 private func cleanupForm() {
@@ -35,7 +36,7 @@ private func cleanupForm() {
 }
 ```
 
-E.g. *Generate random sring*
+###### Generate random sring
 
 ```swift
 let password = String.randomStringWithLength(16)
@@ -44,6 +45,7 @@ let password = String.randomStringWithLength(16)
 ------
 
 ### Get UIColor from it hex representation  <a target="_blank" href="https://gist.github.com/pablogm/206fe8e4ae04b8fdb062">UIColor+Hex.swift</a>
+============
 
 E.g.
 
@@ -55,6 +57,7 @@ let color1 = UIColor(hex: 0x0000ff)
 
 
 ### Add some methods to the NSThread class to run a block on any thread you have a reference to. <a target="_blank" href="https://gist.github.com/pablogm/d20120a97912fea44bed">NSThread+blocks.swift</a>
+============
 
 E.g.
 
@@ -69,14 +72,15 @@ NSThread.performBlockOnMainThread({ () -> Void in
 ------
 
 ### NSDate utils. <a target="_blank" href="https://gist.github.com/pablogm/b18618fa1e33b441fa98">NSDate+Utils.swift</a>
+============
 
-E.g. *Get date by adding / subtracting days from now*
+###### Get date by adding / subtracting days from now
 
 ```swift
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
 ```
 
-E.g. *Get date at midnight*
+###### Get date at midnight
 
 ```swift
 let midNight    = NSDate.dateAtPrevMidnight()
@@ -85,10 +89,9 @@ let midNight    = NSDate.dateAtPrevMidnight()
 ------
 
 ### UIViewController Utils. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+Utils.swift</a>
+============
 
-#### Custom status bar background color on UIViewController
-
-E.g.
+###### Custom status bar background color on UIViewController
 
 *Option 1*:
 
@@ -115,9 +118,9 @@ Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(ani
     }
 ```
 
-#### Popup alert from UIViewController
+###### Popup alert from UIViewController
 
-E.g. *Simple alert*
+*Simple alert*
 
 ```swift
 @IBAction func UserEventsButtonTap() {
@@ -128,7 +131,7 @@ E.g. *Simple alert*
     }
 ```
 
-E.g. *Complex alert: Implementing alert actions*
+*Complex alert: Implementing alert actions*
 
 ```swift
 self.showAlert("My Title", message: "My Text", ok: "Ok", cancel: "Cancel",
