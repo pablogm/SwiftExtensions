@@ -143,3 +143,25 @@ self.showAlert("My Title", message: "My Text", ok: "Ok", cancel: "Cancel",
         print("Alert displayed.")
 })
 ```
+
+------
+
+### Get top view controller  <a target="_blank" href="https://gist.github.com/pablogm/d4cb926fe419687a8fc5">UIApplication+Utils.swift</a>
+============
+
+E.g.
+
+```swift
+if let topController = UIApplication.topViewController() {
+                            
+    if topController is MyViewController {
+                                
+        dispatch_async(dispatch_get_main_queue()) {
+                                    
+                self?.performSegueWithIdentifier("MySegueId", sender: nil)
+        }
+    }
+ }
+```
+
+------
