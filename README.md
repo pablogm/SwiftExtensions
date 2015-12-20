@@ -4,7 +4,7 @@
 
 E.g. *Localized string*
 
-```
+```swift
 "connect".localized
 ```
 
@@ -12,13 +12,13 @@ The "connect" string should be in your *Localizable.strings* files
 
 E.g. *Html to attributed string*
 
-```
+```swift
 let attStringLeft = "<b><font face=\"HelveticaNeue\" size=\"6\" color=\"white\">\(speed)</font></b></br><font face=\"HelveticaNeue\" size=\"2\" color=\"white\">SPEED</font>".html2AttStr
 ```
 
 E.g. *Check if an email is valid*
 
-```
+```swift
  guard emailTextField.text!.isValidEmail() else {
     return false
  }
@@ -26,7 +26,7 @@ E.g. *Check if an email is valid*
 
 E.g. *Clean string*
 
-```
+```swift
 private func cleanupForm() {
     emailTextField.text?.clean()
     passwordTextField.text?.clean()
@@ -35,16 +35,16 @@ private func cleanupForm() {
 
 E.g. *Generate random sring*
 
-```
+```swift
 let password = String.randomStringWithLength(16)
-``
+```
 
 
 ### Get UIColor from it hex representation  <a target="_blank" href="https://gist.github.com/pablogm/206fe8e4ae04b8fdb062">UIColor+Hex.swift</a>
 
 E.g.
 
-```
+```swift
 let color1 = UIColor(hex: 0x0000ff)
 ```
 
@@ -52,7 +52,7 @@ let color1 = UIColor(hex: 0x0000ff)
 
 E.g.
 
-```
+```swift
 "<b>Name:</b><br/>\(name)".html2AttStr
 ```
 
@@ -60,7 +60,7 @@ E.g.
 
 E.g.
 
-```
+```swift
 NSThread.performBlockOnMainThread({ () -> Void in
 
     // Code you want to execute on main thread            
@@ -72,13 +72,13 @@ NSThread.performBlockOnMainThread({ () -> Void in
 
 E.g. *Get date by adding / subtracting days from now*
 
-```
+```swift
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
 ```
 
 E.g. *Get date at midnight*
 
-```
+```swift
 let midNight    = NSDate.dateAtPrevMidnight()
 ```
 
@@ -91,7 +91,7 @@ E.g.
 *Option 1*:
 
 Method Swizzling - Use customViewDidLoad instead of built in viewDidLoad
-```
+```swift
     // MARK: ViewController lifecycle
     
     override func customViewDidLoad() {
@@ -104,7 +104,7 @@ Method Swizzling - Use customViewDidLoad instead of built in viewDidLoad
 
 Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(animated: Bool) for example
 
-```
+```swift
     // MARK: ViewController lifecycle
     
     override func viewDidLoad() {
@@ -117,7 +117,7 @@ Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(ani
 
 E.g. *Simple alert*
 
-```
+```swift
 @IBAction func UserEventsButtonTap() {
         
         dispatch_async(dispatch_get_main_queue()) {
@@ -128,7 +128,7 @@ E.g. *Simple alert*
 
 E.g. *Complex alert: Implementing alert actions*
 
-```
+```swift
 self.showAlert("My Title", message: "My Text", ok: "Ok", cancel: "Cancel",
     cancelAction: { (action) in
         print("Cancel action button pressed.")
