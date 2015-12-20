@@ -46,7 +46,7 @@ E.g.
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
 ```
 
-### UIViewController Utils. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+StatusBar.swift</a>
+### UIViewController Utils. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+Utils.swift</a>
 
 #### Custom status bar background color on UIViewController
 
@@ -77,7 +77,7 @@ Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(ani
     }
 ```
 
-#### Popup alert view from UIViewController
+#### Popup alert from UIViewController
 
 E.g. *Simple alert*
 
