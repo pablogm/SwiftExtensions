@@ -95,7 +95,7 @@ let midNight    = NSDate.dateAtPrevMidnight()
 
 *Option 1*:
 
-Method Swizzling - Use customViewDidLoad instead of built in viewDidLoad
+Method Swizzling - Use customViewDidLoad instead of viewDidLoad
 ```swift
     // MARK: ViewController lifecycle
     
@@ -107,7 +107,7 @@ Method Swizzling - Use customViewDidLoad instead of built in viewDidLoad
 
 *Option 2*:
 
-Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(animated: Bool) for example
+Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(animated: Bool)
 
 ```swift
     // MARK: ViewController lifecycle
