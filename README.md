@@ -1,14 +1,44 @@
 # Useful Swift Extensions 
 
-### Localizing text <a target="_blank" href="https://gist.github.com/pablogm/4ad14e100416d6a804aa">String+Localizable.swift</a>
+### Localizing text <a target="_blank" href="https://gist.github.com/pablogm/4ad14e100416d6a804aa">String+Utils.swift</a>
 
-E.g.
+E.g. *Localized string*
 
 ```
 "connect".localized
 ```
 
 The "connect" string should be in your *Localizable.strings* files
+
+E.g. *Html to attributed string*
+
+```
+let attStringLeft = "<b><font face=\"HelveticaNeue\" size=\"6\" color=\"white\">\(speed)</font></b></br><font face=\"HelveticaNeue\" size=\"2\" color=\"white\">SPEED</font>".html2AttStr
+```
+
+E.g. *Check if an email is valid*
+
+```
+ guard emailTextField.text!.isValidEmail() else {
+    return false
+ }
+```
+
+E.g. *Clean string*
+
+```
+private func cleanupForm() {
+    emailTextField.text?.clean()
+    passwordTextField.text?.clean()
+}
+```
+
+E.g. *Generate random sring*
+
+```
+let password = String.randomStringWithLength(16)
+``
+
 
 ### Get UIColor from it hex representation  <a target="_blank" href="https://gist.github.com/pablogm/206fe8e4ae04b8fdb062">UIColor+Hex.swift</a>
 
