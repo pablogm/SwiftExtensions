@@ -165,3 +165,20 @@ if let topController = UIApplication.topViewController() {
 ```
 
 ------
+
+### Array utils  <a target="_blank" href="https://gist.github.com/pablogm/d4cb926fe419687a8fc5">UIApplication+Utils.swift</a>
+============
+
+###### Append element if it doesn't exist
+
+```swift
+ myArray.filterAppend(element)
+```
+
+###### Get latest element in the array
+
+```swift
+ let lastElement = myArray.last
+```
+
+------
