@@ -38,12 +38,18 @@ NSThread.performBlockOnMainThread({ () -> Void in
 })
 ```
 
-### Get date by adding / subtracting days from now. <a target="_blank" href="https://gist.github.com/pablogm/b18618fa1e33b441fa98">NSDate+Utils.swift</a>
+### NSDate utils. <a target="_blank" href="https://gist.github.com/pablogm/b18618fa1e33b441fa98">NSDate+Utils.swift</a>
 
-E.g.
+E.g. *Get date by adding / subtracting days from now*
 
 ```
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
+```
+
+E.g. *Get date at midnight*
+
+```
+let midNight    = NSDate.dateAtPrevMidnight()
 ```
 
 ### UIViewController Utils. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+Utils.swift</a>
