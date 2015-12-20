@@ -11,7 +11,7 @@
 "connect".localized
 ```
 
-The "connect" string should be in your *Localizable.strings* files
+<sub>The "connect" string should be in your *Localizable.strings* files</sub>
 
 ###### Display an html string (i.e. html string to attributed string)
 
