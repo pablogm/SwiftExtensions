@@ -46,7 +46,9 @@ E.g.
 let tenDaysAgo = NSDate.dateBySubstractingDays(10)
 ```
 
-### Custom status bar background color on UIViewController. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+StatusBar.swift</a>
+### UIViewController Utils. <a target="_blank" href="https://gist.github.com/pablogm/8906e68d950747888343">UIViewController+StatusBar.swift</a>
+
+#### Custom status bar background color on UIViewController
 
 E.g.
 
@@ -73,4 +75,30 @@ Call statusBarBackgroundColor(color: Int) on viewDidLoad() or viewWillAppear(ani
         super.viewDidLoad()
         statusBarBackgroundColor(0x0b6e99)
     }
+```
+
+#### Popup alert view from UIViewController
+
+E.g. *Simple alert*
+
+```
+@IBAction func UserEventsButtonTap() {
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.presentDefaultAlert("My Title", subText: "My Text", dismissText: "Ok")
+        }
+    }
+```
+
+E.g. *Complex alert: Implementing alert actions*
+
+```
+self.showAlert("My Title", message: "My Text", ok: "Ok", cancel: "Cancel",
+    cancelAction: { (action) in
+        print("Cancel action button pressed.")
+    }, okAction: { (action) in
+        print("Ok action button pressed.")
+    }, completion: { () in
+        print("Alert displayed.")
+})
 ```
